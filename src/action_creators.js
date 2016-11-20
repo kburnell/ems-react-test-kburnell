@@ -5,9 +5,16 @@ export function setState(state) {
   };
 }
 
-export function setBookings(bookings) {
+export function setCalendarVisibility(currentlyShowing) {
     return {
-        type: 'SET_BOOKINGS',
-        bookings
+        type: 'SHOW_CALENDAR',
+        currentlyShowing
+    };
+}
+
+export function changeSelectedDate(newDate) {
+    return {
+        type: 'CHANGE_SELECTED_DATE',
+        newDate
     };
 }

@@ -8,7 +8,7 @@ export class BookingsList extends React.PureComponent {
     }
     render() {
         return (
-            <div className="bookings-list">
+            <div ref='bookingsList' className="bookings-list">
                 {this.props.bookings.map((group, i) =>
                     <BookingsListDay key={i} date={group.get('date')} bookings={group.get('bookings')} />
                 )}

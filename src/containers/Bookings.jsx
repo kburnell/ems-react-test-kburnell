@@ -12,7 +12,7 @@ export class Bookings extends React.PureComponent {
     render() {
         return (
             <div className="bookings">
-                <BookingsHeader {...this.props.selectedDate} />
+                <BookingsHeader {...this.props} />
                 <BookingsList {...this.props} />
             </div>
         );
@@ -22,7 +22,8 @@ export class Bookings extends React.PureComponent {
 function mapStateToProps(state) {
     return {
         selectedDate: state.get('selectedDate'),
-        bookings: state.get('bookings')
+        bookings: state.get('bookings'),
+        showCalendar: state.get('showCalendar')
     };
 }
 

@@ -9,7 +9,7 @@ export class BookingsListDayHeader extends React.PureComponent {
     render() {
         return (
             <div className="bookings-list-day-header">
-                <span>{getFormattedDate(this.props.date)}</span>
+                <span ref={getFormattedDate(this.props.date)}>{getFormattedDate(this.props.date)}</span>
             </div>
         );
     }

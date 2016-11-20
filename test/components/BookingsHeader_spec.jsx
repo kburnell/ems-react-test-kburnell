@@ -15,9 +15,10 @@ describe('BookingsHeader', () => {
         const images = scryRenderedDOMComponentsWithTag(component, 'i');
 
         expect(span.length).to.equal(1);
-        expect(images.length).to.equal(2);
-        expect(images[0].className).to.equal('fa fa-search');
-        expect(images[1].className).to.equal('fa fa-plus');
+        expect(images.length).to.equal(3);
+        expect(images[0].className).to.equal('fa fa-angle-down');
+        expect(images[1].className).to.equal('fa fa-search');
+        expect(images[2].className).to.equal('fa fa-plus');
     });
 
     it('renders expected values', () => {
@@ -28,7 +29,7 @@ describe('BookingsHeader', () => {
 
         const span = scryRenderedDOMComponentsWithTag(component, 'span');
 
-        expect(span[0].textContent).to.equal('November 2016');
+        expect(span[0].textContent).to.equal('November 2016 ');
     });
 
 });

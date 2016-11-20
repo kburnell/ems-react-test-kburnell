@@ -11,7 +11,9 @@ import {BookingsContainer} from './containers/Bookings';
 import {BookingContainer} from './containers/Booking';
 
 require('font-awesome-webpack');
+require('rc-calendar/assets/index.css');
 require('./site.less');
+
 
 
 const _ = require('lodash');
@@ -36,7 +38,8 @@ bookings = _.chain(bookings)
 //load initial state
 store.dispatch(setState({
         selectedDate: new Date,
-        bookings: bookings
+        bookings: bookings,
+        showCalendar: false
     }
 ));
 
