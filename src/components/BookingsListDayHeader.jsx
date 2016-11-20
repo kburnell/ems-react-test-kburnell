@@ -16,5 +16,5 @@ export class BookingsListDayHeader extends React.PureComponent {
 }
 
 function getFormattedDate(date) {
-    return moment(date).format("ddd MMM D");
+    return moment.utc(date).format('ddd MMM D');
 }

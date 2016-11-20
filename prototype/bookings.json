@@ -39,8 +39,42 @@
             "id": 5,
             "eventName": "Thanksgiving",
             "roomName": "Conference Room 1",
-            "start": "2016-11-24T00:00:00.000Z",
-            "end": "2016-11-24T23:59:59.999Z"
-        }
-    ]
+            "start": "2016-11-24T06:00:00.000Z",
+            "end": "2016-11-25T05:59:59.999Z"
+        },
+        {
+            "id": 6,
+            "eventName": "Test Booking 06",
+            "roomName": "Demo Room 06",
+            "start": "2016-11-28T13:00:00.000Z",
+            "end": "2016-11-28T13:30:00.000Z"
+        },
+        {
+            "id": 7,
+            "eventName": "Test Booking 07",
+            "roomName": "Demo Room 07",
+            "start": "2016-11-28T14:00:00.000Z",
+            "end": "2016-11-28T15:00:00.000Z"
+        },
+        {
+            "id": 8,
+            "eventName": "Test Booking 08",
+            "roomName": "Demo Room 08",
+            "start": "2016-11-29T13:00:00.000Z",
+            "end": "2016-11-29T14:00:00.000Z"
+        },
+        {
+            "id": 9,
+            "eventName": "Test Booking 09",
+            "roomName": "Demo Room 09",
+            "start": "2016-11-29T15:00:00.000Z",
+            "end": "2016-11-29T16:00:00.000Z"
+        },
+        {
+            "id": 10,
+            "eventName": "Test Booking 10",
+            "roomName": "Demo Room 10",
+            "start": "2016-11-30T15:00:00.000Z",
+            "end": "2016-11-30T16:00:00.000Z"
+        }    ]
 }

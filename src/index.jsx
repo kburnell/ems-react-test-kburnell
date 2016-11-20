@@ -10,7 +10,7 @@ import App from './containers/App';
 import {BookingsContainer} from './containers/Bookings';
 import {BookingContainer} from './containers/Booking';
 
-require("font-awesome-webpack");
+require('font-awesome-webpack');
 require('./site.less');
 
 
@@ -19,7 +19,7 @@ const moment = require('moment');
 const store = createStore(reducer);
 
 //load bookings
-var bookings = require("json-loader!../prototype/bookings.json").bookings;
+var bookings = require('json-loader!../prototype/bookings.json').bookings;
 bookings = _.chain(bookings)
     .groupBy(function(booking) {
         return moment(booking.start).startOf('day').format();

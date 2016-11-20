@@ -20,5 +20,5 @@ export class BookingsHeader extends React.PureComponent {
 }
 
 function getFormattedDate(date) {
-    return moment(date).format("MMMM YYYY");
+    return moment(date).format('MMMM YYYY');
 }

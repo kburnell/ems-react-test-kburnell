@@ -23,23 +23,31 @@ body {
 .bookings-list {
     padding-top: 10px;
 
-    .bookings-list-day-header {
-        padding-top: 10px;
-        border-bottom: 1px solid black;
-        padding-bottom: 10px;
-        text-transform: uppercase;;
-    }
+    .bookings-list-day {
 
-    .bookings-list-day-item {
+        .bookings-list-day-header {
+            padding-top: 10px;
+            border-bottom: 1px solid black;
+            border-top: 1px solid black;
+            padding-bottom: 10px;
+            text-transform: uppercase;
+            background-color: #efeedc;
+        }
 
-        // div.item-date-time {
-        //     display: inline-block;
-        //     float: left;
-        // }
-        //
-        // div.item-event-room {
-        //     display: inline-block;
-        //     float: right;
-        // }
+        .bookings-list-day-event-list {
+
+            .bookings-list-day-event {
+                width: 100%;
+                border-bottom: 1px solid #efeedc;
+                padding-top: 10px;
+                padding-bottom: 10px;
+
+                div.event-start-end {
+                    width: 25%;
+                    float: left;
+                }
+
+            }
+        }
     }
 }
